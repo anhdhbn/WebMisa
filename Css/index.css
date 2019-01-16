@@ -1,0 +1,93 @@
+﻿body{
+    line-height:1.6em;
+    font-size:13px;
+    height:100%;
+    font-family:Arial;
+    color:#1d2129;
+    text-rendering:optimizeLegibility;
+    background-color:#eaebef;
+    overflow:auto;
+}
+#header{
+    height:44px;
+    width:100%;
+    background-color:#355dbd;
+    position:fixed center;
+}
+    #header #logo {
+        margin-left:9%;
+        margin-right: 12px;
+        padding-top: 5px;
+        min-width: 205px;
+        float:left;
+    }
+    #header #searchForm {
+        border: none;
+        background-color: #29478f;
+        color: #fff;
+        margin-top: 8px;
+        border-radius: 5px;
+        width: 46%;
+        height: 68%;
+        float:left;
+    }
+    #header #menuTopRight{
+        float:left;
+        margin-left:5%;
+        margin-top:8px;
+        width:20%;
+        height:68%;
+    }
+        #header #menuTopRight #setting {
+            float: left;
+            margin-right: 20px;
+        }
+        #header #menuTopRight #helf {
+            float: left;
+            margin-right: 20px;
+        }
+        #header #menuTopRight #notication {
+            float: left;
+            margin-right: 20px;
+        }
+        #header #menuTopRight #appInfor {
+            float: left;
+            margin-right: 20px;
+            margin-top:-6px;
+        }
+#maincontent{
+    margin-left:9%;
+    margin-top:10px;
+    border:1px solid black;
+    height:100%;
+    width:100%;
+    max-width:1195px;
+    min-width:960px;
+
+}
+#maincontent #menuLeft{
+    width:205px;
+    margin-left:0%;
+    margin-top: 44px;
+    min-height:100px;
+    margin-right:10px;
+    position:fixed;
+    float:left;
+    overflow:auto;
+}
+.btn{
+    width:100%;
+    margin-left:0%;
+    font-size:13px;
+    }
+    .btn:hover {
+        border-radius:5px;
+        background: white;
+    }
+#content{
+    margin-right:10px;
+    margin-left:217px;
+    flex:1;
+    border:2px solid red;
+
+}
