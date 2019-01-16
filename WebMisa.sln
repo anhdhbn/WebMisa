@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebMisa", "WebMisa\WebMisa.csproj", "{C3918FDC-F399-4B30-BF7D-33E921A50A06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{A4304B38-210C-416E-9A6A-DD6532F15B5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C3918FDC-F399-4B30-BF7D-33E921A50A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3918FDC-F399-4B30-BF7D-33E921A50A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3918FDC-F399-4B30-BF7D-33E921A50A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4304B38-210C-416E-9A6A-DD6532F15B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4304B38-210C-416E-9A6A-DD6532F15B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4304B38-210C-416E-9A6A-DD6532F15B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4304B38-210C-416E-9A6A-DD6532F15B5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
