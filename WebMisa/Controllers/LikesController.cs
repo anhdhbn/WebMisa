@@ -4,30 +4,27 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Demo.Models;
+using BLL;
+using Entity;
 
 namespace WebMisa.Controllers
 {
     public class LikesController : ApiController
     {
-        public List<Like> GetLikeOfStatus(int statusID)
+        LikeBLL _likeBLL = new LikeBLL();
+        [HttpGet]
+        [Route("api/likes/count?statusID={id}")]
+        public int CountLikeByStatusID(Guid statusId)
         {
-            //TODO: trả về danh sách user đã like status
-            return null;
-        }
-
-        public Like GetLikeById(int id)
-        {
-            //trả về thông tin user like status
-            return null;
+            return _likeBLL.CountLikesByStatusId(statusId);
         }
         [HttpPost]
-        public void LikeStatus(int statusId, int userID)
+        public void LikeStatus(Guid statusId, Guid userID)
         {
             
         }
         [HttpDelete]
-        public void Unlike(int id)
+        public void Unlike(Guid id)
         {
 
         }

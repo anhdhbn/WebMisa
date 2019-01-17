@@ -22,7 +22,7 @@ function getUrlVars() {
 function loadDisplayName(id) {
     $.ajax({
         method: "GET",
-        url: "/api/user?id=" + id + "&getName=true",
+        url: "/user/name/" + id,
         success: function (response) {
             return response;
         },
@@ -34,7 +34,7 @@ function loadDisplayName(id) {
 function loadAvatarURL(id) {
     $.ajax({
         method: "GET",
-        url: "/api/user?id=" + id + "&getAvatar=true",
+        url: "/user/image/" + id,
         success: function (response) {
             if (response == "") {
                 return "default.jpeg";
