@@ -1,4 +1,5 @@
 ﻿body{
+    margin-top:0px;
     line-height:1.6em;
     font-size:13px;
     height:100%;
@@ -8,12 +9,12 @@
     background-color:#eaebef;
     overflow:auto;
 }
-#header{
+ body #header{
+    margin-top:-10px;
     height:44px;
     width:100%;
     background-color:#355dbd;
-    position:relative;
-    top: 0px;
+    position:fixed ;
 }
     #header #logo {
         margin-left:9%;
@@ -74,21 +75,49 @@
     margin-right:10px;
     position:fixed;
     float:left;
-    overflow:auto;
 }
 .btn{
+    height:30px;
     width:100%;
     margin-left:0%;
     font-size:13px;
+    padding-left:1em;
+    text-align:left!important;
     }
     .btn:hover {
         border-radius:5px;
         background: white;
     }
 #content{
+    margin-top:44px;
+    height:500px;
     margin-right:10px;
     margin-left:217px;
     flex:1;
     border:2px solid red;
+    float:left;
+}
 
+#content #newStatus{
+    border: 1px solid black;
+    background-color:white;
+    flex:1;
+}
+
+    #content #newStatus #purpostStatus{
+
+    }
+    #content #newStatus #purpostStatus  li{
+        text-align:left;
+        float :left;
+        list-style:none;
+        width:146px;
+        height:5px;
+    }
+#menuRight{
+    margin-top:44px;
+    width:310px;
+    height:1000px;
+    border:2px solid blue;
+    float:left;
 }
