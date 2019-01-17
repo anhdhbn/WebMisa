@@ -9,203 +9,271 @@
     <link href="../Css/index.css" rel="stylesheet" />
 </head>
 <body>
-    <div id="header">
-        <div id="logo">
-            <a href="index.html" title="Phan mem quan tri doanh nghiep">
-                <img src="../Content/Image/logo.png" width="140" height="35"/>
-            </a>
-        </div>
-        <input id="searchForm" type="text" placeholder="   Nhap noi dung tim kiem" style="color:white"/>
-        <div id="searchbtn">
-            <img src="../Content/Image/search.png" />
-        </div>
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6 .col-md-2 AMIS">
+                    <div class="logo">
+                        <div> <img id="img-logo" src="/Content/Image/logo.png" alt="img-logo"></div>
 
-        <div id="menuTopRight">
-            <div id="setting">
-                <a href="index.html" title="Setting">
-                    <img src="../Content/Image/setting-icon-hover.png" />
-                </a>
-            </div>
-            <div id="helf">
-                <a href="index.html" title="Help">
-                    <img src="../Content/Image/help-default.png" />
-                </a>
-            </div>
-            <div id="notication">
-                <a href="index.html" title="notication">
-                    <img src="../Content/Image/noti-default.png" />
-                </a>
-            </div>
-            <div id="appInfor">
-                <a href="index.html" title="infor">
-                    <img src="../Content/Image/EmployeeImage_2.png" title="infor" style="border-radius:100%" />
-                </a>
-                
-            </div>
+                    </div>
+                </div>
+                <div class="col-xs-6 .col-md-8 search">
+                    <div class="row">
 
-        </div>
-    </div>
-    <div id="container">
-        <div id="menuLeft">
-            <div id="user">
-                <img src="../Content/Image/EmployeeImage_2.png" />
-                <a href="../Html/index.html" rel="stylesheet"> 
-                    <strong style="color:#131dde">Nguyễn Văn Hà <br /></strong>
-                </a>
-                <a href="../Html/index.html" rel="stylesheet"> Xem trang cá nhân</a>
+                        <div>
+                            <input id="look" type="text" style="width:625px " placeholder="search...." />
+                        </div>
+                        <div class="timkiem"><img id="find" src="/Content/Image/search.png" alt="find"></div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 .col-md-2 noti">
+                    <div class="row">
+                        <div class="setting"><img id="setting-photo" src="/Content/Image/setting-icon.png" alt="setting-photo"></div>
+                        <div class="help"><img id="help-photo" src="/Content/Image/help-default.png" alt="help-photo"></div>
+                        <div class="noti-img"><img id="noti-photo" src="/Content/Image/noti-default.png" alt="noti-photo"></div>
+                        <div class="person"> <img id="person-photo" src="/Content/Image/EmployeeImage_4.png" alt="preson"></div>
+
+                    </div>
+                </div>
 
             </div>
-            <div id="appMain">
-                <strong>Ứng dụng chính</strong>
-                <div class="btn">
-                    <img src="../Content/Image/news_app.png" />
-                    Tin tức
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/accounting_app.png" />
-                    Kế toán
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/crm_app.png" />
-                    Bán hàng
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/accounting_app.png" />
-                    Nhà hàng
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/hrm2_app.png" />
-                    Nhân sự
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/document_app.png" />
-                    Tài liệu
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/asset_app.png" />
-                    Tài sản
-                </div>
-            </div>
-            <div id="appOther">
-                <strong>Ứng dụng khác</strong>
-                <div class="btn">
-                    <img src="../Content/Image/news_app.png" />
-                    Khai thuế
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/accounting_app.png" />
-                    Công việc
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/crm_app.png" />
-                    Văn thư
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/accounting_app.png" />
-                    Sáng kiến
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/hrm2_app.png" />
-                    Download
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/document_app.png" />
-                    Khách hàng
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/asset_app.png" />
-                    Danh bạ
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/asset_app.png" />
-                    Kho ảnh
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/asset_app.png" />
-                    Danh phim
-                </div>
-                <div class="btn">
-                    <img src="../Content/Image/asset_app.png" />
-                    Tri thức
-                </div>
-            </div>
         </div>
-        <div id="main">
-            <div id="newStatus">
-                <div id="purpostStatus">
-                    <table>
-                        <tr id="purpostStatus">
-                            <td colspan="4">
-                                <ul>
-                                    <li>
-                                        Chia sẻ thông tin
-                                    </li>
-                                    <li>
-                                        Công việc
-                                    </li>
-                                    <li>
-                                        Lịch làm việc
-                                    </li>
-                                    <li>
-                                        Ao cơ hội
-                                    </li>
-                                </ul>
-                            </td>
-                            <td>
-                                <div id="filter">
-                                    <img src="../Content/Image/filter.png" />
-                                </div>
-                            </td>
-                        </tr>
-                        <tr id="writeStatus">
-                            <td colspan="5">
-                                <input type="text" placeholder="Hãy viết gì vào đây" style="width:100%" height="400" />
-                            </td>
-                        </tr>
-                        <tr id="option">
-                            <td colspan="2">
-                                <input type="checkbox" /> Chia sẻ
-                                <input type="checkbox" />Sáng kiến
-                            </td>
-                            <td>
-                                <input type="button" value="Gửi" style="background-color:blue" />
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                
-                <div id="contentStatus">
-                    contentStatus
-                </div>
-                <div id="optionStatus">
-                    optionStatus
-                </div>
-            </div>
-            <div id="Status">
-                <div>Infor</div>
-                <div>Nội dung bài viết</div>
-                <div>like and share</div>
-                <div> Nội dung comment and like</div>
-            </div>
         </div>
-        <div id="menuRight">
-            <div class="module-box">
-                <div class="title">
-                    <span>
-                        <img src="../Content/Image/annoucement.png" height="90%" />
-                        <b>THÔNG BÁO</b>
-                    </span>
-                </div>
-                <div class="content">
-                    <div class="notify-item">tb1</div>
-                    <div class="notify-item">tb1</div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <div id="container">
+            <div id="menuLeft">
+                <div id="user">
 
-    <script src="../Scripts/jquery-3.3.1.min.js"></script>
-    <script src="../Scripts/bootstrap.min.js"></script>
-    <script src="../Scripts/popper.min.js"></script>
+                </div>
+                <div id="appMain">
+                    <strong>Ứng dụng chính</strong>
+                    <div class="btn">
+                        <img src="../Content/Image/news_app.png" />
+                        Tin tức
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/accounting_app.png" />
+                        Kế toán
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/crm_app.png" />
+                        Bán hàng
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/accounting_app.png" />
+                        Nhà hàng
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/hrm2_app.png" />
+                        Nhân sự
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/document_app.png" />
+                        Tài liệu
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/asset_app.png" />
+                        Tài sản
+                    </div>
+                </div>
+                <div id="appOther">
+                    <strong>Ứng dụng khác</strong>
+                    <div class="btn">
+                        <img src="../Content/Image/news_app.png" />
+                        Khai thuế
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/accounting_app.png" />
+                        Công việc
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/crm_app.png" />
+                        Văn thư
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/accounting_app.png" />
+                        Sáng kiến
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/hrm2_app.png" />
+                        Download
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/document_app.png" />
+                        Khách hàng
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/asset_app.png" />
+                        Danh bạ
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/asset_app.png" />
+                        Kho ảnh
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/asset_app.png" />
+                        Danh phim
+                    </div>
+                    <div class="btn">
+                        <img src="../Content/Image/asset_app.png" />
+                        Tri thức
+                    </div>
+                </div>
+            </div>
+            <div id="main">
+                <div id="newStatus">
+                    <div id="purpostStatus">
+                        <ul>
+                            <li>Chia sẻ thông tin</li>
+                            <li>Công việc</li>
+                            <li>Lịch làm việc</li>
+                            <li>Trao cơ hội</li>
+
+                        </ul>
+                    </div>
+                    <div id="filter">
+                        <img src="../Content/Image/filter.png" />
+                    </div>
+                    <div id="contentStatus">
+
+                    </div>
+                    <div id="optionStatus">
+
+                    </div>
+                </div>
+            </div>
+            <div id="menuRight">
+                <div class="module-box">
+                    <div class="title">
+                        <span>
+                            <img src="/Content/Image/module-birthday.png " height="55%" />
+                            <b>SINH NHẬT</b>
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="notify-item">tb1</div>
+                        <div class="notify-item">tb1</div>
+                    </div>
+                    <div class="title">
+                        <span>
+                            <img src="/Content/Image/annoucement.png" height="55%" />
+                            <b>THÔNG BÁO</b>
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="notify-item">tb1</div>
+                        <div class="notify-item">tb1</div>
+                    </div>
+
+                    <div class="title">
+                        <span>
+                            <img src="/Content/Image/module-bestsaller.png" height="55%" />
+                            <b>BÁN HÀNG XUẤT SẮC</b>
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="notify-item">tb1</div>
+                        <div class="notify-item">tb1</div>
+                    </div>
+
+                    <div class="title">
+                        <span>
+                            <img src="/Content/Image/module-user.png" height="55%" />
+                            <b>NHÂN SỰ</b>
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="notify-item">tb1</div>
+                        <div class="notify-item">tb1</div>
+                    </div>
+
+                    <div class="title">
+                        <span>
+                            <img src="/Content/Image/module-revenuechart.png" height="55%" />
+                            <b>DOANH SỐ</b>
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="notify-item">tb1</div>
+                        <div class="notify-item">tb1</div>
+                    </div>
+
+                    <div class="title">
+                        <span>
+                            <img src="/Content/Image/ke-toan.png" height="55%" />
+                            <b>KẾ TOÁN</b>
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="notify-item">tb1</div>
+                        <div class="notify-item">tb1</div>
+                    </div>
+
+                    <div class="title">
+                        <span>
+                            <img src="/Content/Image/module-link.png" height="55%" />
+                            <b>LIÊN KẾT</b>
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="notify-item">tb1</div>
+                        <div class="notify-item">tb1</div>
+                    </div>
+
+
+                    <div class="title">
+                        <span>
+                            <img src="/Content/Image/module-notification.png" height="55%" />
+                            <b>HTMLMODULE</b>
+                        </span>
+                    </div>
+
+
+                    <div class="title">
+                        <span>
+                            <img src="/Content/Image/module-downloadapp.png" height="55%" />
+                            <b>TẢI ỨNG DỤNG MOBILE</b>
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="notify-item">tb1</div>
+                        <div class="notify-item">tb1</div>
+                    </div>
+
+                    <div class="title">
+                        <span>
+                            <img src="/Content/Image/icon-phone (1).png" height="55%" />
+                            <b>TƯ VẤN HỖ TRỢ KHÁCH HÀNG</b>
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="notify-item">tb1</div>
+                        <div class="notify-item">tb1</div>
+                    </div>
+
+                    <div class=" copy-right">
+                        <div class=" address-company"></div>
+                        <div id="Copyright" style="font-family: Helvetica, Tahoma, Arial, sans-serif; font-weight: bold;">
+                            Copyright © 2012 - 2019 MISA JSC
+                        </div>
+                        <div class=" info-address">
+                            Địa chỉ: Tầng 9 - Tòa nhà TECHNOSOFT, phố Duy Tân, P.Dịch Vọng Hậu, Q.Cầu Giấy, TP.Hà Nội.
+                            <br />
+                            Website:
+                            <a href="http://www.misa.com.vn" target="_blank">www.misa.com.vn</a>
+                        </div>
+                        
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <script src="../Scripts/jquery-3.3.1.min.js"></script>
+        <script src="../Scripts/bootstrap.min.js"></script>
+        <script src="../Scripts/popper.min.js"></script>
 </body>
 </html>
