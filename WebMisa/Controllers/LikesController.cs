@@ -13,7 +13,7 @@ namespace WebMisa.Controllers
     {
         LikeBLL _likeBLL = new LikeBLL();
         [HttpGet]
-        [Route("api/likes/count?statusID={id}")]
+        [Route("api/likes/count")]
         public int CountLikeByStatusID(Guid statusId)
         {
             return _likeBLL.CountLikesByStatusId(statusId);

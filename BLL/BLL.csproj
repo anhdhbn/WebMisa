@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BC3F50B8-A419-4F85-BEE0-9ECED1DE3A81}</ProjectGuid>
+    <ProjectGuid>{182D16F7-628B-4DD0-B395-8CE6A593DDB3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BLL</RootNamespace>
@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="CommentBLL.cs" />
     <Compile Include="LikeBLL.cs" />
+    <Compile Include="NotificationBLL.cs" />
     <Compile Include="StatusBLL.cs" />
     <Compile Include="UserBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -12,7 +12,7 @@ namespace WebMisa.Controllers
     {
         UserBLL _userBLL = new UserBLL();
         [HttpGet]
-        public string CheckInfoLogin(string userName, string password)
+        public Guid CheckInfoLogin(string userName, string password)
         {
             return _userBLL.CheckLogin(userName, password);
         }

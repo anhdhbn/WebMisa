@@ -1,48 +1,72 @@
-﻿$(document).ready(function () {
-    var userID = getUrlVars['id'];
-    if (userID != "") {
-        localStorage.setItem("UserID", userID);
-    } else {
-        userID = localStorage.getItem("UserID");
-    }
-
+﻿if (!localStorage.getItem("UserID")) {
+    location.href = "/Html/loginAmis.html";
+}
+$(document).ready(function () {
+    var userID = localStorage.getItem("UserID");
+    indexJS.loadUserData(userID);
+    indexJS.loadNotification(userID);
 })
 var indexJS = Object.create({
-    loadData: function (id) {
-        $("#avatar").attr("src", loadAvatarURL(id));
+    loadUserData: function (id) {
+        loadAvatarURL(id);
+        loadDisplayName(id);
+    },
+    loadNotification: function (id) {
+        loadSystemNotification(id);
     }
 })
-function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
-        vars[key] = value;
-    });
-    return vars;
-}
+
 function loadDisplayName(id) {
     $.ajax({
         method: "GET",
         url: "/user/name/" + id,
         success: function (response) {
-            return response;
+            
         },
         fail: function (response) {
-            return "";
+            
         }
-    })
+    });
 }
 function loadAvatarURL(id) {
     $.ajax({
         method: "GET",
         url: "/user/image/" + id,
         success: function (response) {
-            if (response == "") {
-                return "default.jpeg";
+            if (response) {
+                $("#person-photo").attr("src", response);
             }
-            return response;
+            else {
+                $("#person-photo").attr("src", "/Content/Image/default.jpeg");
+            }
+        },
+        error: function (response) {
+            $("#person-photo").attr("src", "/Content/Image/default.jpeg");
+        }
+    });
+}
+function loadSystemNotification(id) {
+    $.ajax({
+        method: "GET",
+        url: "/notify/global/" + id,
+        success: function (response) {
+            if (response.length > 0) {
+                var htmlElement = "";
+                htmlElement += '<div class="title_chung">' +
+                    '<div class="row">' +
+                    '<img src="/Content/Image/annoucement.png" height="27px" />' +
+                    '<div id="text_chung"> <b>THÔNG BÁO</b></div>' +
+                    '</div></div>';
+                response.each(function (item, index) {
+                    htmlElement += '<div class="content">' +
+                        '<div class="notify-item">' + item.ContentNotification +
+                        '</div></div>';
+                });
+                $('.module-box').prepend(htmlElement);
+            }
         },
         fail: function (response) {
-            return "default.jpeg";
+
         }
-    })
+    });
 }
