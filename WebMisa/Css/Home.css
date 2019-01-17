@@ -1,0 +1,30 @@
+﻿
+#header {
+    width:100%;
+    height:22px;
+    background-color:red;
+    position:fixed;
+
+}
+
+#menuLeft {
+    width: 205px;
+    min-height: 100px;
+    margin-right: 10px;
+    position: fixed;
+    background-color: red;
+}
+
+#content {
+    margin-right: 10px;
+    margin-left: 217px;
+    height: 1000px;
+    background-color: dimgray;
+    float: left;
+}
+
+#menuRight {
+    width: 310px;
+    background-color: yellow;
+    float: left;
+}
