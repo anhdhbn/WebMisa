@@ -8,7 +8,7 @@ using Demo.Models;
 
 namespace WebMisa.Controllers
 {
-    public class LikeController : ApiController
+    public class LikesController : ApiController
     {
         public List<Like> GetLikeOfStatus(int statusID)
         {

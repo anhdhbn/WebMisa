@@ -8,7 +8,7 @@ using Demo.Models;
 
 namespace WebMisa.Controllers
 {
-    public class CommentController : ApiController
+    public class CommentsController : ApiController
     {
         public List<Comment> GetAllCommentByStatusID(int statusID)
         {

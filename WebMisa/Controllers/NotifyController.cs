@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace WebMisa.Controllers
 {
-    public class NotificationController : ApiController
+    public class NotifyController : ApiController
     {
         
     }
