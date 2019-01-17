@@ -16,6 +16,9 @@
             </a>
         </div>
         <input id="searchForm" type="text" placeholder="   Nhap noi dung tim kiem" style="color:white"/>
+        <div id="searchbtn">
+            <img src="../Content/Image/search.png" />
+        </div>
 
         <div id="menuTopRight">
             <div id="setting">
@@ -45,6 +48,11 @@
     <div id="container">
         <div id="menuLeft">
             <div id="user">
+                <img src="../Content/Image/EmployeeImage_2.png" />
+                <a href="../Html/index.html" rel="stylesheet"> 
+                    <strong style="color:#131dde">Nguyễn Văn Hà <br /></strong>
+                </a>
+                <a href="../Html/index.html" rel="stylesheet"> Xem trang cá nhân</a>
 
             </div>
             <div id="appMain">
@@ -125,23 +133,59 @@
         <div id="main">
             <div id="newStatus">
                 <div id="purpostStatus">
-                    <ul>
-                        <li>Chia sẻ thông tin</li>
-                        <li>Công việc</li>
-                        <li>Lịch làm việc</li>
-                        <li>Trao cơ hội</li>
-
-                    </ul>
+                    <table>
+                        <tr id="purpostStatus">
+                            <td colspan="4">
+                                <ul>
+                                    <li>
+                                        Chia sẻ thông tin
+                                    </li>
+                                    <li>
+                                        Công việc
+                                    </li>
+                                    <li>
+                                        Lịch làm việc
+                                    </li>
+                                    <li>
+                                        Ao cơ hội
+                                    </li>
+                                </ul>
+                            </td>
+                            <td>
+                                <div id="filter">
+                                    <img src="../Content/Image/filter.png" />
+                                </div>
+                            </td>
+                        </tr>
+                        <tr id="writeStatus">
+                            <td colspan="5">
+                                <input type="text" placeholder="Hãy viết gì vào đây" style="width:100%" height="400" />
+                            </td>
+                        </tr>
+                        <tr id="option">
+                            <td colspan="2">
+                                <input type="checkbox" /> Chia sẻ
+                                <input type="checkbox" />Sáng kiến
+                            </td>
+                            <td>
+                                <input type="button" value="Gửi" style="background-color:blue" />
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                <div id="filter">
-                    <img src="../Content/Image/filter.png" />
-                </div>
+                
                 <div id="contentStatus">
-
+                    contentStatus
                 </div>
                 <div id="optionStatus">
-
+                    optionStatus
                 </div>
+            </div>
+            <div id="Status">
+                <div>Infor</div>
+                <div>Nội dung bài viết</div>
+                <div>like and share</div>
+                <div> Nội dung comment and like</div>
             </div>
         </div>
         <div id="menuRight">

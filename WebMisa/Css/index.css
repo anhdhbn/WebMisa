@@ -9,6 +9,7 @@
     background-color:#eaebef;
     overflow:auto;
 }
+
     body #header {
         padding: 0;
         margin: 0,auto;
@@ -35,6 +36,9 @@
         height: 68%;
         float:left;
     }
+#header #searchbtn {
+
+}
     #header #menuTopRight{
         float:left;
         margin-left:5%;
@@ -78,8 +82,19 @@
     position:fixed;
     float:left;
 }
+    #container #menuLeft img{
+        border-radius:100%;
+    }
+    #menuLeft #user {
+        margin-left: 5px;
+        margin-bottom: 10px;
+    }
+#menuLeft #user a{
+    margin-left:5px;
+}
+
 .btn{
-    height:30px;
+    height:28px;
     width:100%;
     margin-left:0%;
     font-size:13px;
@@ -100,21 +115,32 @@
     float:left;
 }
 
-#main #newStatus{
-    border: 1px solid black;
-    background-color:white;
-    flex:1;
-}
+    #main #newStatus {
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 3px;
+    }
 
     #main #newStatus #purpostStatus {
         float: left;
+        border-color:black;
     }
-    #main #newStatus #purpostStatus  li{
+    #main #newStatus #purpostStatus li{
         text-align:left;
         float :left;
         list-style:none;
-        width:146px;
+        width:135px;
         height:5px;
+
+    }
+    #main #Status{
+        margin-top:10px;
+        border-radius:3px;
+        border-style:hidden;
+        border:1px solid black;
+        width:auto;
+        height:auto;
+        background-color:white;
     }
 #content #newStatus #filter {
     float: left;
@@ -126,7 +152,6 @@
     margin-top:44px;
     width:310px;
     height:1000px;
-    //border:2px solid blue;
     float:left;
 }
 .module-box {
