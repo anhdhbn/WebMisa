@@ -35,9 +35,9 @@ namespace DLL
             return status;
         }
 
-        public ICollection<Comment> GetAllStatusByUserId(Guid UserId)
+        public ICollection<Status> GetAllStatusByUserId(Guid UserId)
         {
-            List<Comment> listComment = new List<Comment>();
+            List<Status> listStatus = new List<Status>();
             _sqlCommand = CreateSqlCommand();
             _sqlCommand.CommandType = CommandType.StoredProcedure;
             _sqlCommand.CommandText = "[dbo].[Proc_GetAllStatus]";
@@ -45,20 +45,20 @@ namespace DLL
             SqlDataReader sqlDataReader = _sqlCommand.ExecuteReader();
             while (sqlDataReader.Read())
             {
-                var comment = new Comment();
+                var status = new Status();
                 for (int i = 0; i < sqlDataReader.FieldCount; i++)
                 {
                     string fieldName = sqlDataReader.GetName(i);
 
-                    PropertyInfo property = comment.GetType().GetProperty(fieldName);
+                    PropertyInfo property = status.GetType().GetProperty(fieldName);
                     if (property != null && sqlDataReader[fieldName] != DBNull.Value)
                     {
-                        property.SetValue(comment, sqlDataReader[fieldName], null);
+                        property.SetValue(status, sqlDataReader[fieldName], null);
                     }
                 }
-                listComment.Add(comment);
+                listStatus.Add(status);
             }
-            return listComment;
+            return listStatus;
         }
     }
 }

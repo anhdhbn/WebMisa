@@ -12,13 +12,9 @@ namespace BLL
     {
 
         UserDLL _userDLL = new UserDLL();
-        public string CheckLogin(string username, string password)
+        public Guid CheckLogin(string username, string password)
         {
-            if(validate(username, password))
-            {
-                //TODO
-            }
-            return "error";
+            return _userDLL.CheckUserInfo(username, password);
         }
         public string getDisplayName(Guid userID)
         {
@@ -27,11 +23,6 @@ namespace BLL
         public string getAvatarURL(Guid userID)
         {
             return _userDLL.GetUserById(userID).Image;
-        }
-        private bool validate(string username, string password)
-        {
-            //TODO
-            return true;
         }
     }
 }
