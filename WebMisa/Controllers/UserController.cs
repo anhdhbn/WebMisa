@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,6 +10,7 @@ namespace WebMisa.Controllers
 {
     public class UserController : ApiController
     {
+        UserBLL _userBLL = new UserBLL();
         // GET api/User?id=
         public Demo.Models.User GetUserInfo(int id)
         {
@@ -20,6 +22,7 @@ namespace WebMisa.Controllers
             if (getName)
             {
                 //TODO: trả về DisplayName
+                _userBLL.getDisplayName(id);
                 return "";
             }
             return "";
@@ -30,7 +33,7 @@ namespace WebMisa.Controllers
             if (getAvatar)
             {
                 //TODO: trả về url của hình đại diện
-                return "";
+                return _userBLL.getAvatarURL(id);
             }
             return "";
         }
