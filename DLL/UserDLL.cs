@@ -13,14 +13,14 @@ namespace DLL
     public class UserDLL : DataAccess
     {
         private SqlCommand _sqlCommand;
-        public bool CheckUserInfo(string userName, string password)
+        public Guid CheckUserInfo(string userName, string password)
         {
             _sqlCommand = CreateSqlCommand();
             _sqlCommand.CommandType = CommandType.StoredProcedure;
             _sqlCommand.CommandText = "[dbo].[Proc_CheckLogin]";
             _sqlCommand.Parameters.AddWithValue("@Username", userName);
             _sqlCommand.Parameters.AddWithValue("@Password", password);
-            bool result = (bool)_sqlCommand.ExecuteScalar();
+            Guid result = (Guid)_sqlCommand.ExecuteScalar();
             return result;
         }
 
