@@ -83,33 +83,9 @@
     border-radius: 50%
 }
 
+/*-------------------------------------------------------------------------------*/
 
 
-
-    #header #menuTopRight{
-        float:left;
-        margin-left:5%;
-        margin-top:8px;
-        width:20%;
-        height:68%;
-    }
-        #header #menuTopRight #setting {
-            float: left;
-            margin-right: 20px;
-        }
-        #header #menuTopRight #helf {
-            float: left;
-            margin-right: 20px;
-        }
-        #header #menuTopRight #notication {
-            float: left;
-            margin-right: 20px;
-        }
-        #header #menuTopRight #appInfor {
-            float: left;
-            margin-right: 20px;
-            margin-top:-6px;
-        }
 #container{
     margin-left:5.5%;
     margin-top:10px;
@@ -173,12 +149,46 @@
     width: auto;
     height: auto;
 }
+/*-----------------------------------------------menu right------------------------------------*/
 #menuRight{
     margin-top:44px;
     width:310px;
     height:1000px;
     //border:2px solid blue;
     float:left;
+}
+#img-person1 {
+    border-radius: 50%;
+}
+#img-person2 {
+    border-radius: 50%;
+}
+
+
+.title_chung {
+    margin-left: 20px;
+}
+.title_chung1 {
+    margin-left: 0px;
+}
+
+
+#text_chung {
+    margin-left: 5px;
+}
+
+
+.support {
+    margin-left: 150px;
+}
+.support_HTMLMODULE {
+    margin-left: 120px;
+}
+.support_ke_toan {
+    margin-left: 170px;
+}
+.support_ban_hang {
+    margin-left: 60px;
 }
 .module-box {
     background-color: #fff;

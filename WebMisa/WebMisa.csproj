@@ -121,6 +121,7 @@
     <Content Include="Content\Image\login_top.png" />
     <Content Include="Content\Image\logo.png" />
     <Content Include="Content\Image\menu-post-icon.png" />
+    <Content Include="Content\Image\MISA_Support.png" />
     <Content Include="Content\Image\module-bestsaller.png" />
     <Content Include="Content\Image\module-birthday.png" />
     <Content Include="Content\Image\module-downloadapp.png" />
@@ -135,6 +136,7 @@
     <Content Include="Content\Image\noti-default.png" />
     <Content Include="Content\Image\picture_app.png" />
     <Content Include="Content\Image\refresh.jpg" />
+    <Content Include="Content\Image\reload-hover.png" />
     <Content Include="Content\Image\search.png" />
     <Content Include="Content\Image\setting-icon-hover.png" />
     <Content Include="Content\Image\setting-icon.png" />
@@ -143,6 +145,7 @@
     <Content Include="Content\Image\TimKiemKhachHang_03.png" />
     <Content Include="Content\Image\trophy-icon.png" />
     <Content Include="Content\Image\video_app.png" />
+    <Content Include="Content\Image\zoom-in.png" />
     <Content Include="Css\bootstrap.min.css" />
     <Content Include="Css\Home.css" />
     <Content Include="Css\index.css" />
