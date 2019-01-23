@@ -6,19 +6,99 @@
     <title></title>
 </head>
 <body>
-    <div id="header">Header</div>
-    <div id="main">
-        <table>
-            <tr id="menuLeft">
-                Left
-            </tr>
-            <tr id="content">
-                Center
-            </tr>
-            <tr id="menuRight">
-                Right
-            </tr>
-        </table>
+    <div id="top">
+        <div class="wrapper flex">
+            <div id="logo" class="left">
+                <a href="/V2/" title="Phần mềm quản trị doanh nghiệp hợp nhất">
+                    <img src="https://cdnamis2.amis.vn/AMISCore/Styles/images/logo.png" alt="MISA AMIS Logo" width="140px" height="34px">
+                </a>
+            </div>
+            <div class="search-form">
+                <div id="search-form" class="left">
+                    <input type="text" id="txtSearch" autocomplete="off" class="top-search" placeholder="Nhập nội dung tìm kiếm..." style="width: 100%"><input type="text" id="fixError" style="display: none">
+                    <a id="ctl00_ctl00_lnkSearch" onclick="SearchWall()" class="search"></a>
+                </div>
+            </div>
+            <div class="top-user-info">
+                <div class="right">
+                    <div id="amis-newicon" class="left">
+                        <a class="amis-icon new-icon" href="http://help.amis.vn/v2/lich_su_phat_trien_san_pham.htm" target="_blank" title="Tính năng mới"></a>
+                    </div>
+                    <div id="amis-admin-setting" class="left">
+                        <a class="admin-settings-link" href="/V2/Settings" title="Thiết lập hệ thống">
+                            <span class="amis-icon setting-icon"></span>
+                        </a></div><div class="left top-help">
+                        <a href="http://help.amis.vn/v2/" title="Trợ giúp" target="blank">
+                            <span class="amis-icon help-icon"></span>
+                        </a>
+                     </div>
+                    <div id="ctl00_ctl00_Notify1_panelNotificationCenter" class="left notification-wapper"><div class="notification">
+                        <img src="/V2/Styles/images/noti-default.png" class="notify-icon" alt="">
+                            <div id="icon_notificationtop" class="notification-top-icon" style="display: none;"></div>
+                            <div class="notification-box" style="display: none;">
+                                <div id="mcs_container">
+                                    <ul></ul>
+                                </div>
+                                <div class="notification-see-more">
+                                    <a href="/V2/Notify.aspx">Xem tất cả</a>
+                                </div>
+                            </div>
+                            <div class="notify-number" style="display: none;">
+                                <span id="txtNotificationCount">0</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="left header-sperator"></div>
+                <div id="user-info" class="left">
+                    <link href="https://cdnamis2.amis.vn/MISA.CDN.WebResource.axd?type=css&amp;resource=H4sIAAAAAAAEAEtjsGKoY9BnCGYoYahkyGFIZSgG8nwZ8hlSGErh%2fFAgmcpQBGSVMiQzODNkMCQy5DGkA8UCgKxiICwH6igC6tEDyoP4AMADHq9YAAAA&amp;GetViaCDN=1&amp;CDNApplication=AMISCore" rel="stylesheet" type="text/css">
+                    <link href="https://cdnamis2.amis.vn/MISA.CDN.WebResource.axd?type=css&amp;resource=H4sIAAAAAAAEAEtjsGKoY9BnCGYoYahkyGFIZSgG8pKBJIguBbJCgaxUhiIGT4Y8hjSGfAY9qCwAqB95RzoAAAA%3d&amp;GetViaCDN=1&amp;CDNApplication=AMISCore" rel="stylesheet" type="text/css"><div id="iconmenutop" class="menu-top-icon" style="display: none">
+                </div>
+                    <div id="logout-box" style="display: none">
+                        <div>
+                            <div class="GroupConfig">
+                                <a class="fullname" href="/V2/Profile">Nguyễn Văn Hà</a>
+                            </div>
+                            <div id="userconfigmanager">
+                                <ul>
+                                    <li id="menuManagement">
+                                        <a href="javascript:void(0);" onclick="ucUserInfo.menuManagement_Click()">Quản lý ứng dụng</a>
+                                    </li>
+                                    <li>
+                                        <a href="/V2/Profile">Trang tin của tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" id="mdManager" onclick="ucUserInfo.mdManager_Click()">Quản lý ứng dụng và biểu đồ</a>
+                                    </li>
+                                    <li id="liPasswordChange" style="">
+                                        <a href="javascript:void(0);" id="passwordChange" onclick="ucUserInfo.passwordChange_Click()">Thay đổi mật khẩu</a>
+                                    </li>
+                                    <li><a href="javascript:void(0);" id="activeSession" onclick="ucUserInfo.activeSession_Click()">Phiên đăng nhập của tôi</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" id="NotifyHistory" onclick="ucUserInfo.notifyHistory_Click()">Thông báo từ hệ thống</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="GroupConfig">
+                            <a href="javascript:void(0);" id="uiLogout" onclick="ucUserInfo.logout()">Đăng xuất</a>
+                        </div>
+                    </div>
+                    <div id="avatar" class="left"><img src="/V2/Handler/EmployeeImage.ashx?EmpID=ff187913-99e1-4245-9d04-cd02d5fcdc65&amp;width=30&amp;height=30" width="30" height="30" class="" alt="">
+                    </div>
+                    <div id="info" class="left">
+                        <div class="full-name">
+                            <b>
+                                <a class="username profile-menu" href="javascript:void(0)">Hà</a
+                            </b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear">
+        </div>
     </div>
+</div>
 </body>
 </html>

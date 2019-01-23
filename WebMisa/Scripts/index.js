@@ -1,6 +1,6 @@
-﻿if (!localStorage.getItem("UserID")) {
-    location.href = "/Html/loginAmis.html";
-}
+﻿//if (!localStorage.getItem("UserID")) {
+//    location.href = "/Html/loginAmis.html";
+//}
 $(document).ready(function () {
     var userID = localStorage.getItem("UserID");
     indexJS.loadUserData(userID);

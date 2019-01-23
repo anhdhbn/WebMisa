@@ -1,96 +1,125 @@
-﻿
-#img-logo {
-    height: 34px;
-    width: 140px;
-    margin-left: 2px;
+﻿body {
+    margin-top: 0px;
+    line-height: 1.6em;
+    font-size: 13px;
+    height: 100%;
+    font-family: Arial;
+    color: #1d2129;
+    text-rendering: optimizeLegibility;
+    background-color: #eaebef;
+    overflow: auto;
+    margin: 0,auto;
+}
+div{
+    display:block;
 }
 
-.header {
+#header {
+    top: 0;
+    left:0;
+    margin:0;
+    padding:0;
+    width: 100%;
     background-color: #355dbd;
     min-height: 44px;
-    border: 1px solid white;
+    position: fixed;
+    min-width: 960px;
 }
+*{
+    margin:0;
+    padding:0;
+}
+#header #logo{
+    margin-right:12px;
+    margin-top:5px;
+    width:205px;
+}
+.search-form{
+    margin-top:5px;
+    flex:1;
+    margin-right:12px;
+    margin-left:7px;
+}
+#header #search-form{
+    position:relative;
+    width:100%;
+}
+#txtSearch{
+    width:100%;
 
- .header .AMIS .logo {
-        height: 44px;
-        width: 44px;
-        margin-top: 3px;
-        margin-left: 94px;
-    }
+}
+.top-userInfor{
+    margin-top:7px;
+    width:310px;
+}
+#header #search-form #findWall {
+    background: url('../Content/Image/search.png');
+    background-repeat:no-repeat!important;
+    top: 0;
+    margin-top:7px;
+    position: absolute;
+    right: -2px;
+    height: 30px !important;
+    width: 37px !important;
+    border-radius: 0px 3px 3px 0px;
+}
+#header #search-form input{
+    border:none;
+    padding:0,5px;
+    height:30px!important;
+    background-color:#29478f;
+    color:#ffffff;
+    font-size:13px;
+    border-radius:3px;
 
-#look {
-    background-color: #29478f;
-    margin-top: 9px;
-    margin-left: 180px;
-    border: #29478f solid;
-    height:30px;
-    color: white;
 }
-.timkiem {
-    height: 30px;
-    background-color: #29478f;
-    margin-left: 0px;
-    margin-top: 9px;
-    width: 30px;
-    color: white;
+.left {
+    float: left;
 }
-.search {
-    border-radius: 10px;
+#settingLink{
+    text-align:center;
+    display:inline-block;
 }
-.noti {
-    margin-top: 2px;
-    margin-left: 170px;
+#iconSetting {
+    background-image: url('../Content/Image/setting-icon-hover.png')!important;
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat !important;
+    border-radius: 2px;
 }
-
-#setting-photo {
-    height: 22px;
-    width: 22px;
+#iconHelp {
+    background-image: url('../Content/Image/help-default.png')!important;
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat !important;
+    border-radius: 2px;
 }
-
-#help-photo {
-    height: 22px;
-    width: 22px;
+#iconNotication {
+    background-image: url('../Content/Image/noti-default.png')!important;
+    height: 25px;
+    width: 25px;
+    background-repeat: no-repeat !important;
+    border-radius: 2px;
 }
-
-#noti-photo {
-    height: 22px;
-    width: 22px;
+.right{
+    float:right;
 }
-
-.setting {
-    margin-top: 7px;
-    margin-right: 10px;
+.wrapper {
+    margin: 0 auto;
+    padding: 0;
 }
-
-.help {
-    margin-left: 5px;
-    margin-right: 15px;
-    margin-top: 7px;
+.flex{
+    display:-webkit-flex;
 }
-
-.noti-img {
-    margin-top: 7px;
-    margin-right: 15px;
+.clear{
+    clear:both;
 }
-
-.person {
-    margin-top: 2px;
-    width: 30px;
-    height: 30px;
-}
-
-#person-photo {
-    border-radius: 50%
-}
-
 /*-------------------------------------------------------------------------------*/
 
 
 #container{
-    margin-left:5.5%;
     margin-top:10px;
-    border:1px solid black;
-    height:100%;
+    height:auto;
     width:100%;
     max-width:1195px;
     min-width:960px;
@@ -123,6 +152,7 @@
     margin-right:10px;
     margin-left:217px;
     flex:1;
+    position:relative;
     border:2px solid red;
     float:left;
 }
@@ -153,9 +183,9 @@
 #menuRight{
     margin-top:44px;
     width:310px;
-    height:1000px;
-    //border:2px solid blue;
+    height:auto;
     float:left;
+    background-color:#ffffff;
 }
 #img-person1 {
     border-radius: 50%;
